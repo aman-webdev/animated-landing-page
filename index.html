@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursor Animations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-barba="wrapper">
+    <header class="primary-header">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html" class="logo"
+            >Brand<span class="exp-logo">Logo</span></a
+          >
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <div class="main-container">
+        <div class="text-div">
+          <h1 class="title">Nature</h1>
+          <p class="desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+            porro dolor iusto, atque dolorum accusamus.
+          </p>
+          <div class="reveal-text"></div>
+        </div>
+        <div class="img-div">
+          <img class="fashion-img" src="fashion.jpg" alt="fashion img" />
+          <div class="img-reveal"></div>
+        </div>
+      </div>
+      <a href="explore.html" class="btn">Explore</a>
+    </main>
+
+    <div class="cursor-div">
+      <span></span>
+    </div>
+
+    <div class="slide s-1"></div>
+    <div class="slide s-2"></div>
+    <div class="slide s-3"></div>
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
